@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import Home from 'views/home';
 import Product from 'views/product';
+import Cart from 'views/cart';
 
 export interface RouteInterface {
   exact?: boolean,
@@ -20,6 +21,11 @@ const routes:  Array<RouteInterface> = [{
   path: '/:id',
   name: 'product',
   component: Product,
+  exact: true,
+}, {
+  path: '/cart',
+  name: 'cart',
+  component: Cart,
   exact: true,
 }];
 

@@ -1,0 +1,21 @@
+{
+  "categories": [{
+    "id": 99,
+    "name": "Ofertas do dia"
+  }, {
+    "id": 1,
+    "name": "Celulares"
+  }, {
+    "id": 2,
+    "name": "Móveis"
+  }, {
+    "id": 3,
+    "name": "Eletrodomésticos"
+  }, {
+    "id": 4,
+    "name": "Tv e Vídeo"
+  }, {
+    "id": 5,
+    "name": "Informática"
+  }]
+}
