@@ -1,7 +1,11 @@
 import React, { FC } from 'react';
 
+import Layout from 'components/Layout';
+
 const Home: FC = () => (
-  <div>Home</div>
+  <Layout>
+    <div></div>
+  </Layout>
 );
 
 export default Home;

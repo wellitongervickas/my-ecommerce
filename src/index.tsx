@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import Routes from 'routes';
 import dotenv from 'dotenv';
+
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from 'assets/javascript/global-styles';
 import theme from 'assets/javascript/theme';

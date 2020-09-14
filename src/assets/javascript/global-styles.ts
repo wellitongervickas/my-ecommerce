@@ -7,8 +7,19 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html, body, #root {
+    height: 100%;
+  }
+
   body {
-    font-family: 'Roboto', sans-serif;
-    background-color: ${(props) => props.theme.primary};
+    font-family:  ${({ theme }) => theme.fontFamily};
+    font-size: ${({ theme }) => theme.fontDefault};
+    color: ${({ theme }) => theme.dark};
+    background-color: ${({ theme }) => theme.light};
+    font-weight: ${({ theme }) => theme.lightly};
+  }
+
+  img {
+    max-width: 100%;
   }
 `
