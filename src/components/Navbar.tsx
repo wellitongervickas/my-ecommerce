@@ -40,7 +40,7 @@ const NavIcon = styled.div`
 const NavList = styled.div<{opened: boolean}>`
   @media screen and (max-width: ${({ theme }) => theme.breakpointDesktop}) {
     transition: all 0.1s ease-in;
-    position: absolute;
+    position: fixed;
     opacity: ${props => props.opened ? '0.9' : '0'};
     visibility: ${props => props.opened ? 'visible' : 'hidden'};
     left: ${props => props.opened ? '0' : '-100%'};
