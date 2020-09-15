@@ -5,8 +5,8 @@ import { FaTimes, FaBars } from 'react-icons/fa';
 
 import Cart from 'components/Cart';
 
-import { breakpointDesktop } from 'assets/javascript/theme';
 import debounceEvent from 'helpers/events/debounce';
+import { breakpointDesktop } from 'assets/javascript/theme';
 
 const Container = styled.nav`
   display: flex;
@@ -20,7 +20,6 @@ const Container = styled.nav`
     li {
       a {
         font-size: ${({ theme }) => theme.fontMd};
-        text-decoration: none;
         color: ${({ theme }) => theme.dark};
         padding: 0 1rem;
       }
@@ -68,8 +67,10 @@ const Navbar: FC = () => {
   const handleSetIsOpen = useCallback(() => setIsOpen(!isOpen), [setIsOpen, isOpen]);
 
   const handleResizeWindow = debounceEvent(useCallback(() => {
-    setIsOpen(Number(window.innerWidth) > breakpointDesktop);
-  }, [setIsOpen]), 100);
+    if (!isOpen) {
+      setIsOpen(Number(window.innerWidth) > breakpointDesktop);
+    }
+  }, [setIsOpen, isOpen]), 100);
 
   useEffect(() => {
     window.addEventListener('resize', handleResizeWindow)

@@ -1,21 +1,142 @@
 {
   "categories": [{
-    "id": 99,
-    "name": "Ofertas do dia"
-  }, {
     "id": 1,
-    "name": "Celulares"
+    "name": "News"
   }, {
     "id": 2,
-    "name": "Móveis"
+    "name": "Men"
   }, {
     "id": 3,
-    "name": "Eletrodomésticos"
+    "name": "Woman"
   }, {
     "id": 4,
-    "name": "Tv e Vídeo"
+    "name": "Kids"
   }, {
     "id": 5,
-    "name": "Informática"
+    "name": "Skate"
+  }, {
+    "id": 6,
+    "name": "Surf"
+  }],
+  "products": [{
+    "id": 1,
+    "image_path": "https://secure-static.vans.com.br/medias/sys_master/vans/vans/hac/hf5/h00/h00/9865709322270/4701000590004U-01-BASEIMAGE-Midres.jpg",
+    "name": "Moletom otw crew",
+    "slug": "moleton-otw-crew",
+    "description": null,
+    "colors": ["vermelho"],
+    "sizes": ["G", "GG", "M", "P"],
+    "main_category": "men",
+    "price": {
+      "old_value": 229.99,
+      "new_value": 159.99,
+      "installments": 3,
+      "installment_value": 53.33
+    }
+  }, {
+    "id": 2,
+    "name": "Camiseta print box",
+    "slug": "camiseta-print-box",
+    "image_path": "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h1f/heb/h00/h00/9865605546014/4701602600010U-01-BASEIMAGE-Midres.jpg",
+    "description": null,
+    "colors": ["azul"],
+    "sizes": ["G", "GG", "M", "P"],
+    "main_category": "men",
+    "price": {
+      "old_value": 99.99,
+      "new_value": 69.99,
+      "installments": 1,
+      "installment_value": 69.99
+    }
+  }, {
+    "id": 3,
+    "name": "Bermuda authentic decksider 19",
+    "slug": "bermuda-authetic-decksider-19",
+    "image_path": "https://secure-static.vans.com.br/medias/sys_master/vans/vans/hc8/h1e/h00/h00/9595581923358/4700800060001U-01-BASEIMAGE-Midres.jpg",
+    "description": null,
+    "colors": ["verde"],
+    "sizes": ["34", "36", "38", "40", "42", "44", "46", "48"],
+    "main_category": "men",
+    "price": {
+      "old_value": 249.99,
+      "new_value": 179.99,
+      "installments": 3,
+      "installment_value": 60.00
+    }
+  }, {
+    "id": 4,
+    "name": "Tênis era",
+    "slug": "tenis-era",
+    "image_path": "https://secure-static.vans.com.br/medias/sys_master/vans/vans/ha8/h1f/h00/h00/9578509828126/1002000690050U-01-BASEIMAGE-Midres.jpg",
+    "description": "O Mismatch Era combina o clássico tênis de skate de cano baixo da Vans a um cabedal resistente de tecido e camurça, ilhoses de metal, cano acolchoado para proporcionar suporte e flexibilidade e a sola de borracha waffle, original da marca.",
+    "colors": ["Estampado"],
+    "sizes": ["33", "34", "36", "38", "39", "40", "42", "44", "46", "48"],
+    "main_category": "news",
+    "price": {
+      "old_value": 249.99,
+      "new_value": 219.99,
+      "installments": 4,
+      "installment_value": 55.00
+    }
+  }, {
+    "id": 5,
+    "name": "Boardshort vtcs poster",
+    "slug": "boardshort-vtcs-poster",
+    "image_path": "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h3e/h28/h00/h00/9542632341534/4700800040001U-01-BASEIMAGE-Midres.jpg",
+    "description": null,
+    "colors": ["azul"],
+    "sizes": ["34", "36", "38", "40", "42", "44", "46", "48"],
+    "main_category": "men",
+    "price": {
+      "old_value": 249.99,
+      "new_value": 129.99,
+      "installments": 2,
+      "installment_value": 65.00
+    }
+  }, {
+    "id": 6,
+    "name": "Bermuda authentic stretch",
+    "slug": "bermuda-authentic-stretch",
+    "image_path": "https://secure-static.vans.com.br/medias/sys_master/vans/vans/hd9/h86/h00/h00/9643050074142/4701400050008U-01-BASEIMAGE-Midres.jpg",
+    "description": null,
+    "colors": [],
+    "sizes": ["34", "36", "38", "40", "42", "44", "46", "48"],
+    "main_category": "men",
+    "price": {
+      "old_value": 249.99,
+      "new_value": 199.99,
+      "installments": 4,
+      "installment_value": 50.00
+    }
+  }, {
+    "id": 7,
+    "name": "Regata half time",
+    "slug": "regata-half-time",
+    "image_path": "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h61/h61/h00/h00/9865687924766/4702700870001U-01-BASEIMAGE-Midres.jpg",
+    "description": null,
+    "colors": ["branco"],
+    "sizes": ["G", "GG", "M", "P", "PP"],
+    "main_category": "woman",
+    "price": {
+      "old_value": 89.99,
+      "new_value": 49.99,
+      "installments": 1,
+      "installment_value": 49.99
+    }
+  }, {
+    "id": 8,
+    "name": "Jaqueta scatter zip",
+    "slug": "jaqueta-scatter-zip",
+    "image_path": "https://secure-static.vans.com.br/medias/sys_master/vans/vans/hfc/hd8/h00/h00/9542524993566/4702300280001U-01-BASEIMAGE-Midres.jpg",
+    "description": null,
+    "colors": ["vermelho"],
+    "sizes": ["G", "GG", "M", "P", "PP"],
+    "main_category": "woman",
+    "price": {
+      "old_value": 489.99,
+      "new_value": 199.99,
+      "installments": 4,
+      "installment_value":50.00
+    }
   }]
 }

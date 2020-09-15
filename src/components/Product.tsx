@@ -1,15 +1,28 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 
+import { Link } from 'react-router-dom';
 import Heading from 'components/Heading';
+import money from 'helpers/patterns/money';
 
-import productImage from 'assets/images/products/1.jpg';
+export interface IProductPrice {
+  old_value: number
+  new_value: number
+  installments: number
+  installment_value: number
+}
 
-
-const ProductImage = styled.div`
-  padding-top: 1rem;
-`;
-
+export interface IProduct {
+  id: number
+  slug: string
+  image_path: string
+  name: string
+  description?: string
+  colors: Array<string>
+  sizes: Array<string>
+  main_category?: string
+  price: IProductPrice
+}
 
 const ProductDetails = styled.div`
   padding-top: 1rem;
@@ -19,28 +32,32 @@ const ProductPrices = styled.div`
   padding-top: 1rem;
 
   strong {
+    color: ${({ theme }) => theme.primary};
     font-size: ${({ theme }) => theme.fontLg};
   }
 `;
 
-const Product: FC = () => (
-  <div>
+const Product: FC<{product: IProduct}> = ({ product }) => (
+  <Link to={`/${product.main_category}/${product.id}/${product.slug}`}>
     <div>
-      <img src={productImage} alt="product name" />
+      <img src={product.image_path} alt={product.name} />
     </div>
     <ProductDetails>
-      <Heading is="h3" normalize>Camiseta Print Box</Heading>
+      <Heading is="h3" normalize>{product.name}</Heading>
       <ProductPrices>
-        <div>de R$322,00 por</div>
+        <div>de {money(product.price.old_value)} por</div>
         <div>
-          <strong>R$190,00</strong>
+          <strong>{money(product.price.new_value)}</strong>
         </div>
         <div>
-          <small>10x de 19,00 sem juros</small>
+          <small>
+            {product.price.installments}x de
+            {money(product.price.installment_value)} sem juros
+          </small>
         </div>
       </ProductPrices>
     </ProductDetails>
-  </div>
+  </Link>
 );
 
 export default Product;

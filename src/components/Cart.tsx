@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import { FaShoppingBag } from 'react-icons/fa';
 
-const CartIcon = styled.div`
+const CartIcon = styled(Link)`
   margin: 0 1rem;
   font-size: 1.4rem;
   cursor: pointer;
@@ -32,7 +33,7 @@ const Cart: FC = () => {
   const count: Number = 0;
 
   return (
-    <CartIcon>
+    <CartIcon to="/cart">
       <FaShoppingBag />
       <Counter>{count}</Counter>
     </CartIcon>

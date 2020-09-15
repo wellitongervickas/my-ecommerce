@@ -1,7 +1,11 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 
-import Product from 'components/Product';
+import Product, { IProduct} from 'components/Product';
+
+export interface IProductsList {
+  products: Array<IProduct>
+}
 
 const Container = styled.div`
   display: grid;
@@ -24,17 +28,12 @@ const Container = styled.div`
   }
 `;
 
-const ProductsList: FC = () => (
-  <Container>
-    <Product />
-    <Product />
-    <Product />
-    <Product />
-    <Product />
-    <Product />
-    <Product />
-    <Product />
-  </Container>
-);
+const ProductsList: FC<IProductsList> = ({ products }) => {
+  return (
+    <Container>
+      {products.map((product) => <Product key={product.id} product={product} />)}
+    </Container>
+  )
+};
 
 export default ProductsList;

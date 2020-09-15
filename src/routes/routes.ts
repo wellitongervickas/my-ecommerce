@@ -13,12 +13,7 @@ export interface RouteInterface {
 }
 
 const routes:  Array<RouteInterface> = [{
-  path: '/',
-  name: 'home',
-  component: Home,
-  exact: true,
-}, {
-  path: '/:id',
+  path: '/:category/:id/:slug',
   name: 'product',
   component: Product,
   exact: true,
@@ -26,6 +21,11 @@ const routes:  Array<RouteInterface> = [{
   path: '/cart',
   name: 'cart',
   component: Cart,
+  exact: true,
+}, {
+  path: '*',
+  name: 'home',
+  component: Home,
   exact: true,
 }];
 
