@@ -9,7 +9,7 @@ export interface IProductsList {
 
 const Container = styled.div`
   display: grid;
-  grid-gap: 4rem;
+  grid-gap: 2rem;
 
   @media screen and (max-width: ${({ theme }) => theme.breakPointMobile}) {
     grid-template-columns: 1fr;

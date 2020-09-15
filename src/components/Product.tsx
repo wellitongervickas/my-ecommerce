@@ -26,6 +26,11 @@ export interface IProduct {
 
 const ProductDetails = styled.div`
   padding-top: 1rem;
+  text-align: center;
+
+  h3 {
+    text-transform: uppercase;
+  }
 `;
 
 const ProductPrices = styled.div`
@@ -49,12 +54,14 @@ const Product: FC<{product: IProduct}> = ({ product }) => (
         <div>
           <strong>{money(product.price.new_value)}</strong>
         </div>
-        <div>
-          <small>
-            {product.price.installments}x de
-            {money(product.price.installment_value)} sem juros
-          </small>
-        </div>
+        {product.price.installments > 1 && (
+          <div>
+            <small>
+              {product.price.installments}x de
+              {money(product.price.installment_value)} sem juros
+            </small>
+          </div>
+        )}
       </ProductPrices>
     </ProductDetails>
   </Link>
