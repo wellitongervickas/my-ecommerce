@@ -10,10 +10,10 @@ import Heading from 'components/Heading';
 import productsService from 'api/services/products';
 
 const Content = styled.div`
-  margin: 2rem 4rem;
+  margin: 2rem;
 
   h2 {
-    margin: 4rem 0;
+    margin: 2rem 0;
   }
 `;
 

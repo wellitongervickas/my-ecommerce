@@ -1,7 +1,13 @@
 import React, { FC } from 'react';
 
-const Product: FC = () => (
-  <div>Product</div>
-);
+import Layout from 'components/Layout';
+
+const Product: FC = () => {
+  return (
+    <Layout>
+      #Product
+    </Layout>
+  )
+};
 
 export default Product;

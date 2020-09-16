@@ -30,12 +30,10 @@ const Counter = styled.div`
 `;
 
 const Cart: FC = () => {
-  const count: Number = 0;
-
   return (
     <CartIcon to="/cart">
       <FaShoppingBag />
-      <Counter>{count}</Counter>
+      <Counter>{0}</Counter>
     </CartIcon>
   )
 }
